@@ -134,9 +134,6 @@ kanban-plugin: board
 
 ## In Progress
 
-- [ ] [FD] Godot Project Setup
-	  - [x] Create new Godot 4.4 project
-	  - [ ] Configure project settings (window size, name, etc.)
 
 
 ## Done
@@ -144,6 +141,9 @@ kanban-plugin: board
 **Complete**
 - [x] Outline Project Scope
 - [x] Start GDD
+- [x] [FD] Godot Project Setup
+	  - [x] Create new Godot 4.4 project
+	  - [x] Configure project settings (window size, name, etc.)
 
 
 

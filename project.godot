@@ -11,6 +11,81 @@ config_version=5
 [application]
 
 config/name="Shooting Range"
-config/description="Enter an interesting project description here!"
+config/description="A game focused on shooting guns with nice polish."
 config/features=PackedStringArray("4.4")
 config/icon="res://icon.png"
+
+[autoload]
+
+EventBus="*res://scripts/event_bus.gd"
+
+[debug]
+
+settings/stdout/print_fps=true
+
+[display]
+
+window/stretch/mode="viewport"
+
+[input]
+
+move_forward={
+"deadzone": 0.2,
+"events": []
+}
+move_backward={
+"deadzone": 0.2,
+"events": []
+}
+move_left={
+"deadzone": 0.2,
+"events": []
+}
+move_right={
+"deadzone": 0.2,
+"events": []
+}
+jump={
+"deadzone": 0.2,
+"events": []
+}
+crouch={
+"deadzone": 0.2,
+"events": []
+}
+run={
+"deadzone": 0.2,
+"events": []
+}
+shoot={
+"deadzone": 0.2,
+"events": []
+}
+reload={
+"deadzone": 0.2,
+"events": []
+}
+aim={
+"deadzone": 0.2,
+"events": []
+}
+interact={
+"deadzone": 0.2,
+"events": []
+}
+pause={
+"deadzone": 0.2,
+"events": []
+}
+menu={
+"deadzone": 0.2,
+"events": []
+}
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+anti_aliasing/quality/msaa_3d=2

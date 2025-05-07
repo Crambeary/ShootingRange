@@ -99,16 +99,6 @@ kanban-plugin: board
 
 ## Foundation
 
-- [ ] [FD] Level Blockout
-	  - [ ] Add basic geometry for play area
-	  - [ ] Set up navigation space
-	  - [ ] Place placeholder obstacles/targets
-- [ ] [FD] PlayerCharacter Scene
-	  - [ ] Create PlayerCharacter.tscn
-	  - [ ] Add child nodes (Camera3D, CollisionShape3D, MeshInstance3D, etc.)
-- [ ] [FD] Camera Setup
-	  - [ ] Attach Camera3D to PlayerCharacter
-	  - [ ] Implement aiming with mouse only (no movement)
 - [ ] [FD] Input Map
 	  - [ ] Define input actions (aim, shoot, pause)
 - [ ] [FD] Core Gameplay Loop
@@ -127,9 +117,12 @@ kanban-plugin: board
 
 ## Next Up
 
-- [ ] [FD] Main Scene
-	  - [ ] Create Main.tscn
-	  - [ ] Add root node (Node or Node3D)
+- [ ] [FD] PlayerCharacter Scene
+	  - [ ] Create PlayerCharacter.tscn
+	  - [ ] Add child nodes (Camera3D, CollisionShape3D, MeshInstance3D, etc.)
+- [ ] [FD] Camera Setup
+	  - [ ] Attach Camera3D to PlayerCharacter
+	  - [ ] Implement aiming with mouse only (no movement)
 
 
 ## In Progress
@@ -144,6 +137,13 @@ kanban-plugin: board
 - [x] [FD] Godot Project Setup
 	  - [x] Create new Godot 4.4 project
 	  - [x] Configure project settings (window size, name, etc.)
+- [x] [FD] Main Scene
+	  - [x] Create Main.tscn
+	  - [x] Add root node (Node or Node3D)
+- [x] [FD] Level Blockout
+	  - [x] Add basic geometry for play area
+	  - [x] Set up navigation space
+	  - [x] Place placeholder obstacles/targets
 
 
 

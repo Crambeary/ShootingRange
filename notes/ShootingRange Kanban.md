@@ -99,12 +99,6 @@ kanban-plugin: board
 
 ## Foundation
 
-- [ ] [FD] Input Map
-	  - [ ] Define input actions (aim, shoot, pause)
-- [ ] [FD] Core Gameplay Loop
-	  - [ ] Implement aiming and shooting logic
-	  - [ ] Add hit detection on static target
-	  - [ ] Provide immediate feedback (muzzle flash, sound, UI)
 - [ ] [FD] Placeholder Assets
 	  - [ ] Import or create temporary meshes and textures
 - [ ] [FD] TileMapLayer Setup
@@ -117,12 +111,10 @@ kanban-plugin: board
 
 ## Next Up
 
-- [ ] [FD] PlayerCharacter Scene
-	  - [ ] Create PlayerCharacter.tscn
-	  - [ ] Add child nodes (Camera3D, CollisionShape3D, MeshInstance3D, etc.)
-- [ ] [FD] Camera Setup
-	  - [ ] Attach Camera3D to PlayerCharacter
-	  - [ ] Implement aiming with mouse only (no movement)
+- [ ] [FD] Core Gameplay Loop
+	  - [ ] Implement aiming and shooting logic
+	  - [ ] Add hit detection on static target
+	  - [ ] Provide immediate feedback (muzzle flash, sound, UI)
 
 
 ## In Progress
@@ -144,6 +136,10 @@ kanban-plugin: board
 	  - [x] Add basic geometry for play area
 	  - [x] Set up navigation space
 	  - [x] Place placeholder obstacles/targets
+- [x] [FD] PlayerCharacter Scene
+	  - [x] Utilize Protocontroller from Brackey's
+- [x] [FD] Input Map
+	  - [x] Define input actions (aim, shoot, pause)
 
 
 

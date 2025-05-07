@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://df8o6l4b0d4s"]
+[gd_scene load_steps=5 format=3 uid="uid://df8o6l4b0d4s"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_o5qli"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sgp6g"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -26,9 +28,6 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
 size = Vector3(29.5, 0.2, 34.4)
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 0, 11.8, 22)
-
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
 
 [node name="Wall" type="CSGBox3D" parent="CSGCombiner3D"]
@@ -36,12 +35,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.15, 16.1)
 size = Vector3(28.5, 4.3, 1)
 
 [node name="Wall2" type="CSGBox3D" parent="CSGCombiner3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 8.9)
-size = Vector3(28.5, 1.5, 1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 8.9)
+size = Vector3(28.5, 1.2, 1)
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGCombiner3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65, 0)
 radius = 0.2
+height = 1.3
 
 [node name="CSGSphere3D" type="CSGSphere3D" parent="CSGCombiner3D/CSGCylinder3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
+radial_segments = 16
+rings = 16
+
+[node name="ProtoController" parent="." instance=ExtResource("1_o5qli")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+can_move = false
+has_gravity = false
+can_jump = false

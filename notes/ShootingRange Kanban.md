@@ -4,6 +4,11 @@ kanban-plugin: board
 
 ---
 
+## Stretch Ideas
+
+- [ ] Movement
+
+
 ## Menus & QoL
 
 - [ ] [MQ] Main Menu
@@ -80,12 +85,46 @@ kanban-plugin: board
 	- [ ] Playtest for clarity
 
 
+## Foundation
+
+- [ ] [FD] Level Blockout
+	- [ ] Add basic geometry for play area
+	- [ ] Set up navigation space
+	- [ ] Place placeholder obstacles/targets
+- [ ] [FD] PlayerCharacter Scene
+	- [ ] Create PlayerCharacter.tscn
+	- [ ] Add child nodes (Camera3D, CollisionShape3D, MeshInstance3D, etc.)
+- [ ] [FD] Camera Setup
+	- [ ] Attach Camera3D to PlayerCharacter
+	- [ ] Implement aiming with mouse only (no movement)
+- [ ] [FD] Input Map
+	- [ ] Define input actions (aim, shoot, pause)
+- [ ] [FD] Core Gameplay Loop
+	- [ ] Implement aiming and shooting logic
+	- [ ] Add hit detection on static target
+	- [ ] Provide immediate feedback (muzzle flash, sound, UI)
+- [ ] [FD] Placeholder Assets
+	- [ ] Import or create temporary meshes and textures
+- [ ] [FD] TileMapLayer Setup
+	- [ ] Add TileMapLayer nodes if using tiles
+	- [ ] Configure layers for collision, navigation, visuals
+- [ ] [FD] Lighting Setup
+	- [ ] Add basic DirectionalLight3D or other lights
+	- [ ] Test visibility and mood
+
+
 ## Next Up
 
+- [ ] [FD] Main Scene
+	- [ ] Create Main.tscn
+	- [ ] Add root node (Node or Node3D)
 
 
 ## In Progress
 
+- [ ] [FD] Godot Project Setup
+	- [ ] Create new Godot 4.4 project
+	- [ ] Configure project settings (window size, name, etc.)
 
 
 ## Done
@@ -99,6 +138,6 @@ kanban-plugin: board
 
 %% kanban:settings
 ```
-{"kanban-plugin":"board","list-collapse":[true,false,true,false,true]}
+{"kanban-plugin":"board","list-collapse":[true,true,true,false,false,false,false]}
 ```
 %%

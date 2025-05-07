@@ -15,6 +15,8 @@ _Aim: Features are in planning or early development. Update the status as featur
 
 A focused Godot project to test and polish core shooting mechanics—aim, shoot, and enjoy responsive feedback. No moving targets, just you, your weapon, and a static target.
 
+This project aims to deliver a functional prototype where the player is stationary and can aim and shoot at a static target. The gameplay loop focuses on aiming, shooting, hit detection, and responsive feedback (visual, audio, and UI). There are no plans for player movement—the experience is about precision and shooting mechanics only.
+
 ## Quick Start
 1. Install [Godot Engine 4.x](https://godotengine.org/)
 2. Clone this repo

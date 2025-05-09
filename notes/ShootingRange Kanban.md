@@ -111,14 +111,14 @@ kanban-plugin: board
 
 ## Next Up
 
-- [ ] [FD] Core Gameplay Loop
-	  - [ ] Implement aiming and shooting logic
-	  - [ ] Add hit detection on static target
-	  - [ ] Provide immediate feedback (muzzle flash, sound, UI)
 
 
 ## In Progress
 
+- [ ] [FD] Core Gameplay Loop
+	  - [ ] Implement aiming and shooting logic
+	  - [ ] Add hit detection on static target
+	  - [ ] Provide immediate feedback (muzzle flash, sound, UI)
 
 
 ## Done

@@ -52,6 +52,8 @@ var freeflying : bool = false
 ## IMPORTANT REFERENCES
 @onready var head: Node3D = $Head
 @onready var collider: CollisionShape3D = $Collider
+@onready var camera: Camera3D = $Head/Camera3D
+@onready var raycast_3d: RayCast3D = $Head/Raycast3D
 
 func _ready() -> void:
 	check_input_mappings()
@@ -176,3 +178,9 @@ func check_input_mappings():
 	if can_freefly and not InputMap.has_action(input_freefly):
 		push_error("Freefly disabled. No InputAction found for input_freefly: " + input_freefly)
 		can_freefly = false
+
+func _input(event: InputEvent) -> void:
+	if event is InputEventMouseButton:
+		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+			var collided_with = raycast_3d.get_collider()
+			print(collided_with)
